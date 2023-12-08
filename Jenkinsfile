@@ -27,7 +27,8 @@ pipeline {
 				echo "integration test"
 			}
 		}
-	} post {
+	} 
+	post {
 		always {
 			echo 'Ian aweson. I run always '
 		}
