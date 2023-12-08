@@ -22,10 +22,21 @@ pipeline {
 			}
 		}
 
-		stage('Integration TEst') {
+		stage('Integration Test') {
 			steps {
 				echo "integration test"
 			}
+		}
+	} post {
+		always {
+			echo 'Ian aweson. I run always '
+		}
+
+		success {
+			echo 'Irun when you are succesful '
+		}
+		failure {
+			echo 'Irun when you fail '
 		}
 	}
 	
