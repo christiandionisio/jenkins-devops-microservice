@@ -9,7 +9,7 @@
 //DECLARATIVE
 pipeline {
 	agent any {
-		tools { jdk 'java-8.0.292' }
+		tools { jdk "jdk 'java-7-sdk'" }
 	}
 	// agent {docker {image 'maven:3.6.3'}}
 	//agent {docker {image 'node:13.8'}}
