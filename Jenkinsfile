@@ -8,9 +8,8 @@
 
 //DECLARATIVE
 pipeline {
-	agent any {
-		tools { jdk "java-8-sdk" }
-	}
+	agent any
+	tools { jdk "java-8-sdk" }
 	// agent {docker {image 'maven:3.6.3'}}
 	//agent {docker {image 'node:13.8'}}
 	environment {
